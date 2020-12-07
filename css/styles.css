@@ -274,12 +274,16 @@ nav {
     .project-div,.container {
         margin: 1rem 0;
     }
+
+    hr {
+        width: 90%;
+    }
      
 }
 
 @media(max-width:450px) {
     body {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .nav-brand{
         font-size: 1rem;
