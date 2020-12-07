@@ -58,22 +58,24 @@ nav {
 /* Header */
 
 .hero {
-    margin: 1rem 5rem;
+    margin: 1rem auto;
+    text-align: center;
     display: block;
 }
 
 .hero-img {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    float: left;
-    margin: 1rem 3rem;
+    display: block;
+    margin: 1rem auto;
 }
 
 .about-text {
-    padding: 5rem 3rem 1rem 5rem;
+    padding: 3rem 5rem;
     max-width: 80%;
     font-size: larger;
+    margin: auto;
 }
 
 .about-text .link {
@@ -85,7 +87,7 @@ nav {
 /* Section */
 
 .section {
-    margin: 2rem 10rem;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -97,6 +99,7 @@ nav {
 
 .projects {
     width: 40%;
+    min-width: 200px;
     display: inline-block;
     padding: auto 1rem;
     border: 1px solid;
@@ -106,6 +109,7 @@ nav {
 
 .blogs {
     width: 40%;
+    min-width: 200px;
     display: inline-block;
     padding: auto 1rem;
     border: 1px solid;
@@ -143,7 +147,7 @@ nav {
 /* About */
 
 .about {
-    margin: 2rem 10rem;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -157,6 +161,8 @@ nav {
     margin:auto;
     font-size: larger;
     margin-bottom: 3rem;
+    width: 70%;
+    min-width: 200px;
 }
 
 .list-tech {
@@ -205,9 +211,10 @@ nav {
 /* Project-page */
 
 .project-div {
-    width: 35%;
+    width: 25%;
+    min-width: 200px;
     display: inline-block;
-    padding: auto 1rem;
+    padding: 0 1rem;
     border: 1px solid;
     height: fit-content;
     margin-left: 1rem;
@@ -216,7 +223,7 @@ nav {
 }
 
 .project-div p{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .project-div .link {
@@ -230,35 +237,64 @@ nav {
     text-decoration: underline;
 }
 
-@media(max-width:900px) {
-    body {
+/* Blogs Page */
+
+.add-ons {
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.add-ons h2{
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.blog-desc{
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.add-ons a{
+    padding: 0.5rem;
+}
+
+.add-ons small {
+    color: var(--secondary-color);
+}
+
+@media(max-width:620px) {
+    .navigation, .nav-pills {
         text-align: center;
     }
 
-    .nav-pills {
-       text-align: center;
+    .projects, .blogs {
+        margin: 1rem 0;
     }
 
-    .hero-img {
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        display: block
+    .project-div,.container {
+        margin: 1rem 0;
     }
-
-    .about-text {
-        display: block;
-        margin: auto;
-    }
-    
-    .container {
-        display: block;
-        width: 350px;
-        margin: 1rem auto;
-        overflow-wrap: break-word;
-    }
-   
+     
 }
+
+@media(max-width:450px) {
+    body {
+        font-size: 0.6rem;
+    }
+    .nav-brand{
+        font-size: 1rem;
+    }
+    .list-item-inline {
+        display: block;
+        margin: 1.5rem;
+        padding: 0;
+    }
+    .list-non-bullet {
+        padding: 0;
+    }
+}
+
+    
 
 
 
